@@ -18,16 +18,16 @@ If you just wish to test out the best performing model clone or download "*Singl
 Two images are provided for testing purposes. 
 ```bash
 ├── Build
-│   ├── Ext										~Scripts Regarding Extracting Feature Data
+│   ├── Ext								~Scripts Regarding Extracting Feature Data
 │   ├── Models
 │   │   ├── DAISY
 │   │   │   ├── Machines						~Scripts to generate 20 DAISY classifiers for each model
 │   │   │   └── Training						~Scripts to train DAISY models
 │   │   └── ORB
-│   │├── Machines								~Scripts to generate 20 ORB classifiers for each model
-│   │└── Training								~Scripts to train ORB models
-│   └── Norm									~Scripts used in normalization
-└── Testing										~Scripts used to test models against all data
+│   │├── Machines							~Scripts to generate 20 ORB classifiers for each model
+│   │└── Training							~Scripts to train ORB models
+│   └── Norm								~Scripts used in normalization
+└── Testing								~Scripts used to test models against all data
 ```
 ### Additional Files
 If you wish to recreate this project from scratch you will need the [wikiart dataset](https://github.com/cs-chan/ArtGAN/tree/master/WikiArt%20Dataset) (Size = ~26Gb).
