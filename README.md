@@ -31,8 +31,10 @@ Two images are provided for testing purposes.
 ```
 ### Additional Files
 If you wish to recreate this project from scratch you will need the [wikiart dataset](https://github.com/cs-chan/ArtGAN/tree/master/WikiArt%20Dataset) (Size = ~26Gb).
+
 If you would instead prefer the extracted feature data with the pre-trained models [you will need this](https://drive.google.com/open?id=1OC_psStovltRR9P-Td2NvY8AUwm0FBcV) (Size = ~1Gb).
-for a full guide on how to recreate this project please refer to the "user guide" section of the report.
+
+For a full guide on how to recreate this project please refer to the "user guide" section of the report.
 
 
 
