@@ -1,6 +1,6 @@
 # Investigating the efficacy of classical machine learning algorithms for the automated identification of artistic movements
 
-This is the implementation of my [final year project](https://drive.google.com/file/d/1AKLcAOen1EjgpSDOYlnB4z1WNUfpUbS8/view?usp=sharing), which compared the efficacy of different novel classical machine learning models against a convolutional neural networks implemented in [this ICIP](http://web.fsktm.um.edu.my/~cschan/doc/ICIP2016.pdf) paper.
+This is the implementation of my [final year project](https://drive.google.com/file/d/1AKLcAOen1EjgpSDOYlnB4z1WNUfpUbS8/view?usp=sharing), which compared the efficacy of different novel classical machine learning models against convolutional neural networks implemented in [this ICIP](http://web.fsktm.um.edu.my/~cschan/doc/ICIP2016.pdf) paper.
 
 ## Prerequisites
 You will require python 3.6.7 and the following python packages
