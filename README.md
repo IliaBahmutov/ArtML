@@ -20,16 +20,16 @@ Two images are provided for testing purposes.
 To fully recreate this project you will need the build scripts as well as the additional files. For a full guide on how to recreate this project please refer to the "user guide" section of the [report](https://drive.google.com/file/d/1AKLcAOen1EjgpSDOYlnB4z1WNUfpUbS8/view?usp=sharing).
 ```bash
 ├── Build
-│   ├── Ext								~Scripts Regarding Extracting Feature Data
+│   ├── Ext				~Scripts Regarding Extracting Feature Data
 │   ├── Models
 │   │   ├── DAISY
-│   │   │   ├── Machines						~Scripts to generate 20 DAISY classifiers for each model
-│   │   │   └── Training						~Scripts to train DAISY models
+│   │   │   ├── Machines		~Scripts to generate 20 DAISY classifiers for each model
+│   │   │   └── Training		~Scripts to train DAISY models
 │   │   └── ORB
-│   │├── Machines							~Scripts to generate 20 ORB classifiers for each model
-│   │└── Training							~Scripts to train ORB models
-│   └── Norm								~Scripts used in normalization
-└── Testing								~Scripts used to test models against all data
+│   │├── Machines			~Scripts to generate 20 ORB classifiers for each model
+│   │└── Training			~Scripts to train ORB models
+│   └── Norm				~Scripts used in normalization
+└── Testing				~Scripts used to test models against all data
 ```
 ### Additional Files
 If you wish to recreate this project from scratch you will need the [wikiart dataset](https://github.com/cs-chan/ArtGAN/tree/master/WikiArt%20Dataset) (Size = ~26Gb).
