@@ -29,24 +29,24 @@ isnot = numpy.zeros(shape=(sizeoflearningsample)) #create array to hold label da
 
 
 for filename in sorted(os.listdir('./')):
-	try:
-		if not (filename.endswith("py")): #all non script files
-			img = color.rgb2gray(io.imread(filename)) #convert image into grayscale
-			descs, descs_img = daisy(img, step=95, radius=30, rings=2, histograms=6, orientations=6, visualize=True)
-			thedata[filenumb] = descs #Add daisy data to 4d numpy array
-			if (filename.startswith(nameofthesample)):
-				isnot[filenumb] = 1
-				filenumb += 1
-			else:
-				isnot[filenumb] = 0
-				filenumb += 1
-			count += 1
-			perc = round(100*(float(count)/float(filecount)),2) #percentage of files looped to two decimal places
-			print (str(perc) + "%") # pring percentage
-		else: 
-			errorlist.append(filename)
-	except:
-		errorlist.append(filename)
+    try:
+        if not (filename.endswith("py")): #all non script files
+            img = color.rgb2gray(io.imread(filename)) #convert image into grayscale
+            descs, descs_img = daisy(img, step=95, radius=30, rings=2, histograms=6, orientations=6, visualize=True)
+            thedata[filenumb] = descs #Add daisy data to 4d numpy array
+            if (filename.startswith(nameofthesample)):
+                isnot[filenumb] = 1
+                filenumb += 1
+            else:
+                isnot[filenumb] = 0
+                filenumb += 1
+            count += 1
+            perc = round(100*(float(count)/float(filecount)),2) #percentage of files looped to two decimal places
+            print (str(perc) + "%") # pring percentage
+        else: 
+            errorlist.append(filename)
+    except:
+        errorlist.append(filename)
 
 numpy.save(nameofthesample+"TrainingData",thedata)		#Save FeatureData
 numpy.save(nameofthesample+"TrainingDataLabels", isnot)	#Save FeatureDataLabel
@@ -55,9 +55,9 @@ end = time.time()
 print (str(round((end - start),2)) + " seconds to complete")
 
 if errorlist:
-	try:
-		for x in errorlist: print ("File: " + x + ": Failed")
-	except:
-		print ("Error List Error")
+    try:
+        for x in errorlist: print ("File: " + x + ": Failed")
+    except:
+        print ("Error List Error")
 else: 
-	print ("No Errors During Feature Extraction")
+    print ("No Errors During Feature Extraction")

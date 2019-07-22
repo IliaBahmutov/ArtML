@@ -112,45 +112,45 @@ truenegative = 0;
 
 
 for manums in madepth: 
-	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-	for minvals in mins:
-		machine = DecisionTreeClassifier(splitter='best', random_state=1,max_depth = manums,min_samples_split = minvals)
-		machine.fit(data,isnot)
-		#score the data 
-		#change predictpoba(wdataXX) to correct data
-		checkagainst[0] = mean(machine.predict_proba(wdata19)[:,1]) #true positive
-		falsenegative = 1-checkagainst[0]
-		#make sure correct wdataXX isn't in the results and that the other 19 are
-		results[0] = mean(machine.predict_proba(wdata0)[:,1])
-		results[1] = mean(machine.predict_proba(wdata1)[:,1])
-		results[2] = mean(machine.predict_proba(wdata2)[:,1])
-		results[3] = mean(machine.predict_proba(wdata3)[:,1])
-		results[4] = mean(machine.predict_proba(wdata4)[:,1])
-		results[5] = mean(machine.predict_proba(wdata5)[:,1])
-		results[6] = mean(machine.predict_proba(wdata6)[:,1])
-		results[7] = mean(machine.predict_proba(wdata7)[:,1])
-		results[8] = mean(machine.predict_proba(wdata8)[:,1])
-		results[9] = mean(machine.predict_proba(wdata9)[:,1])
-		results[10] = mean(machine.predict_proba(wdata10)[:,1])
-		results[11] = mean(machine.predict_proba(wdata11)[:,1])
-		results[12] = mean(machine.predict_proba(wdata12)[:,1])
-		results[13] = mean(machine.predict_proba(wdata13)[:,1])
-		results[14] = mean(machine.predict_proba(wdata14)[:,1])
-		results[15] = mean(machine.predict_proba(wdata15)[:,1])
-		results[16] = mean(machine.predict_proba(wdata16)[:,1])
-		results[17] = mean(machine.predict_proba(wdata17)[:,1])
-		results[18] = mean(machine.predict_proba(wdata18)[:,1])
-		for numbers in results:
-			falsepositive = falsepositive+numbers
-			truenegative = truenegative+(1-numbers)
-		#ACC = (TP+TN)/(TP+TN+FP+FN)
-		accuracy = ((truepositive+truenegative)/(truepositive+truenegative+falsepositive+falsenegative))
-		print (str(accuracy))
-		checkagainst = [0]
-		falsepositive = 0;
-		falsenegative = 0;
-		truepositive = 0;
-		truenegative = 0;
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    for minvals in mins:
+        machine = DecisionTreeClassifier(splitter='best', random_state=1,max_depth = manums,min_samples_split = minvals)
+        machine.fit(data,isnot)
+        #score the data 
+        #change predictpoba(wdataXX) to correct data
+        checkagainst[0] = mean(machine.predict_proba(wdata19)[:,1]) #true positive
+        falsenegative = 1-checkagainst[0]
+        #make sure correct wdataXX isn't in the results and that the other 19 are
+        results[0] = mean(machine.predict_proba(wdata0)[:,1])
+        results[1] = mean(machine.predict_proba(wdata1)[:,1])
+        results[2] = mean(machine.predict_proba(wdata2)[:,1])
+        results[3] = mean(machine.predict_proba(wdata3)[:,1])
+        results[4] = mean(machine.predict_proba(wdata4)[:,1])
+        results[5] = mean(machine.predict_proba(wdata5)[:,1])
+        results[6] = mean(machine.predict_proba(wdata6)[:,1])
+        results[7] = mean(machine.predict_proba(wdata7)[:,1])
+        results[8] = mean(machine.predict_proba(wdata8)[:,1])
+        results[9] = mean(machine.predict_proba(wdata9)[:,1])
+        results[10] = mean(machine.predict_proba(wdata10)[:,1])
+        results[11] = mean(machine.predict_proba(wdata11)[:,1])
+        results[12] = mean(machine.predict_proba(wdata12)[:,1])
+        results[13] = mean(machine.predict_proba(wdata13)[:,1])
+        results[14] = mean(machine.predict_proba(wdata14)[:,1])
+        results[15] = mean(machine.predict_proba(wdata15)[:,1])
+        results[16] = mean(machine.predict_proba(wdata16)[:,1])
+        results[17] = mean(machine.predict_proba(wdata17)[:,1])
+        results[18] = mean(machine.predict_proba(wdata18)[:,1])
+        for numbers in results:
+            falsepositive = falsepositive+numbers
+            truenegative = truenegative+(1-numbers)
+        #ACC = (TP+TN)/(TP+TN+FP+FN)
+        accuracy = ((truepositive+truenegative)/(truepositive+truenegative+falsepositive+falsenegative))
+        print (str(accuracy))
+        checkagainst = [0]
+        falsepositive = 0;
+        falsenegative = 0;
+        truepositive = 0;
+        truenegative = 0;
 
 
 end = time.time()
