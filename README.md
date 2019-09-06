@@ -35,3 +35,7 @@ To fully recreate this project you will need the build scripts as well as the ad
 If you wish to recreate this project from scratch you will need the [wikiart dataset](https://github.com/cs-chan/ArtGAN/tree/master/WikiArt%20Dataset) (Size = ~26Gb).
 
 If you would instead prefer the extracted feature data with the pre-trained models [you will need this](https://drive.google.com/open?id=1OC_psStovltRR9P-Td2NvY8AUwm0FBcV) (Size = ~1Gb).
+
+### TL;DR
+Q: Can I use this to classify my artwork?
+A: If 9% accuracy sounds good to you then, yes.
